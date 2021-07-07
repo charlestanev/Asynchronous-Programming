@@ -35,8 +35,6 @@ function solve() {
         stopInfoSpan.textContent = `Arriving at ${stopName}`;
         departButton.disabled = false;
         arriveButton.disabled = true;
-
-
     }
 
     return {
