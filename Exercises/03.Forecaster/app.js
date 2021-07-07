@@ -35,7 +35,7 @@ function attachEvents() {
                 .then(body => body.json())
                 .then(currentWheatherReport => ({code:location.code, currentWheatherReport}));
             })
-            .then(({code, currentWheatherReport}) => {
+            .then(({ code, currentWheatherReport }) => {
                 console.log(currentWheatherReport);
                 let htmlReport = createCurrentWheatherElement(currentWheatherReport);
 
