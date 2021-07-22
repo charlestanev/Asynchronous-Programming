@@ -1,5 +1,5 @@
 function lockedProfile() {
-    (async () => {
+    (async() => {
         let profileRequest = await fetch('http://localhost:3030/jsonstore/advanced/profiles');
         let profiles = await profileRequest.json();
         console.log(profiles);
@@ -113,12 +113,12 @@ function lockedProfile() {
             return;
         }
 
-        showMoreButton.textContent = showMoreButton.textContent === 'Show More'
-            ? 'Hide it'
-            : 'Show More';
+        showMoreButton.textContent = showMoreButton.textContent === 'Show More' ?
+            'Hide it' :
+            'Show More';
 
-        hiddenFieldsDiv.style.display = hiddenFieldsDiv.style.display === 'block'
-            ? 'none'
-            : 'block';
+        hiddenFieldsDiv.style.display = hiddenFieldsDiv.style.display === 'block' ?
+            'none' :
+            'block';
     }
 }

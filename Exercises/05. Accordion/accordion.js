@@ -53,9 +53,9 @@ function buttonTest(e) {
     let buttonId = e.target.id;
 
     let showMoreButton = e.target;
-    showMoreButton.textContent = showMoreButton.textContent === 'More'
-        ? 'Less'
-        : 'More';
+    showMoreButton.textContent = showMoreButton.textContent === 'More' ?
+        'Less' :
+        'More';
 
     let hideExtraClass = e.target.parentElement.nextElementSibling;
 
